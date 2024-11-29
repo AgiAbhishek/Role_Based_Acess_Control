@@ -99,6 +99,7 @@ nodejs-rbac-tutorial/
  PORT=7001
 JWT_SECRET=your_jwt_secret
 CONNECTION_STRING=your_mongodb_connection_string
+ ```bash
 
 4. Replace placeholders with the appropriate values:
 - your_jwt_secret: A secure random string to sign JWT tokens.
@@ -109,7 +110,7 @@ CONNECTION_STRING=your_mongodb_connection_string
 PORT=7001
 JWT_SECRET=mySuperSecureJWTSecret
 CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
-
+ ```bash
 ### Step 4: Connect to MongoDB Atlas
 
 1.Visit MongoDB Atlas and log in.
