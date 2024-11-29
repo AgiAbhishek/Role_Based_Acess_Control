@@ -126,12 +126,17 @@ CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabas
 
 ### Step 5: Start the Application
 1.Run the application locally using:
-npm run dev
+- npm run dev
 2.If everything is set up correctly:
+  
 - The server will start at http://localhost:7001.
 - You should see a message in the terminal:
  **Server is running at port 7001**  
  **Database connected: `<host>`, `<database-name>`**
+  
+3.Open your browser and visit:
+- http://localhost:7001/login.html to log in.
+- http://localhost:7001/register.html to register.
 
 
 
