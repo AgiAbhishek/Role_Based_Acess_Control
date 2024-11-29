@@ -133,7 +133,7 @@ npm run dev
   
 **Server is running at port 7001**
 
-**Database connected: <host>, <database-name>**
+**Database connected: <host> <database-name>**
 
 
 
