@@ -95,19 +95,22 @@ nodejs-rbac-tutorial/
 1. In the root of your src directory, create a .env file.
    
 2. Add the following environment variables to the .env file:
- PORT=7001
- JWT_SECRET=your_jwt_secret
- CONNECTION_STRING=your_mongodb_connection_string
+```plaintext
+PORT=7001
+JWT_SECRET=mySuperSecureJWTSecret
+CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
+```
 
 4. Replace placeholders with the appropriate values:
 - your_jwt_secret: A secure random string to sign JWT tokens.
 - your_mongodb_connection_string: Your MongoDB Atlas connection string.
 
 **Example:**
-
+```plaintext
 PORT=7001
 JWT_SECRET=mySuperSecureJWTSecret
 CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
+```
 
 ### Step 4: Connect to MongoDB Atlas
 
