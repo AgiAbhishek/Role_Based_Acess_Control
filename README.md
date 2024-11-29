@@ -104,6 +104,7 @@ nodejs-rbac-tutorial/
 - your_mongodb_connection_string: Your MongoDB Atlas connection string.
 
 **Example:**
+
 PORT=7001
 JWT_SECRET=mySuperSecureJWTSecret
 CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
@@ -127,8 +128,8 @@ npm run dev
 - The server will start at http://localhost:7001.
 - You should see a message in the terminal:
   
-***Server is running at port 7001
-Database connected: <host>, <database-name>***
+***Server is running at port 7001***
+***Database connected: <host>, <database-name>***
 
 
 
