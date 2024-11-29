@@ -130,10 +130,8 @@ npm run dev
 2.If everything is set up correctly:
 - The server will start at http://localhost:7001.
 - You should see a message in the terminal:
-  
-**Server is running at port 7001**
-
-**Database connected: <host> <database-name>**
+ **Server is running at port 7001**  
+ **Database connected: `<host>`, `<database-name>`**
 
 
 
