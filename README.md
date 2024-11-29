@@ -70,8 +70,8 @@ nodejs-rbac-tutorial/
 └── README.md
 
 ---
-
-##Installation
+```
+## Installation 
 
 ### Step 1: Clone the Repository
 
@@ -80,64 +80,54 @@ nodejs-rbac-tutorial/
    git clone https://github.com/YourUsername/Role_Based_Access_Control.git
    cd Role_Based_Access_Control
 
----
-
 ### Step 2: Install Dependencies
+1. Ensure that you have Node.js installed on your system.
+2. Run the following command in the project directory to install the necessary dependencies: npm install
 
-1. Ensure that you have [Node.js](https://nodejs.org/) installed on your system.
-2. Run the following command in the project directory to install the necessary dependencies:
-   ```bash
-   npm install
-3.	This will install the following dependencies:
-	•	Express.js: A fast, unopinionated web framework for Node.js.
-	•	Mongoose: A MongoDB object modeling tool for Node.js.
-	•	bcrypt.js: A library to hash passwords securely.
-	•	jsonwebtoken (JWT): A library for securely transmitting information between parties.
-	•	dotenv: A module to load environment variables from a .env file into process.env.
+**3.This will install the following dependencies:**
+- Express.js: A fast, unopinionated web framework for Node.js.
+- Mongoose: A MongoDB object modeling tool for Node.js.
+- bcrypt.js: A library to hash passwords securely.
+- jsonwebtoken (JWT): A library for securely transmitting information between parties.
+- dotenv: A module to load environment variables from a .env file into process.env.
 
---- 
-
-Step 3: Set Up Environment Variables
-
-	1.	In the root of your src directory, create a .env file.
-	2.	Add the following environment variables to the .env file:
-
-PORT=7001
+### Step 3: Set Up Environment Variables
+1. In the root of your src directory, create a .env file.
+   
+2. Add the following environment variables to the .env file:
+ PORT=7001
 JWT_SECRET=your_jwt_secret
 CONNECTION_STRING=your_mongodb_connection_string
 
-	3.	Replace placeholders with the appropriate values:
-	•	your_jwt_secret: A secure random string to sign JWT tokens.
-	•	your_mongodb_connection_string: Your MongoDB Atlas connection string.
-Example - 
+4. Replace placeholders with the appropriate values:
+- your_jwt_secret: A secure random string to sign JWT tokens.
+- your_mongodb_connection_string: Your MongoDB Atlas connection string.
+
+**Example:**
 PORT=7001
 JWT_SECRET=mySuperSecureJWTSecret
 CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
 
----
+### Step 4: Connect to MongoDB Atlas
 
-Step 4: Connect to MongoDB Atlas
+1.Visit MongoDB Atlas and log in.
+2.Create a new cluster (the free tier is sufficient for this project).
+3.Under the Database Access section:
+- Add a new database user with a username and password.
+- Ensure the user has proper read and write access.
+4.Under the Network Access section:
+- Allow access from your IP address or from all IPs (for development).
+5.Go to the Clusters page and click Connect > Connect Your Application.
+6.Copy the connection string and update your .env file as shown in Step 3.
 
-	1.	Visit MongoDB Atlas and log in.
-	2.	Create a new cluster (the free tier is sufficient for this project).
-	3.	Under the Database Access section:
-	•	Add a new database user with a username and password.
-	•	Ensure the user has proper read and write access.
-	4.	Under the Network Access section:
-	•	Allow access from your IP address or from all IPs (for development).
-	5.	Go to the Clusters page and click Connect > Connect Your Application.
-	6.	Copy the connection string and update your .env file as shown in Step 3.
-
----
-
-
-Step 5: Start the Application
-
-	1.	Run the application locally using:
+### Step 5: Start the Application
+1.Run the application locally using:
 npm run dev
-
-	2.	If everything is set up correctly:
-	•	The server will start at http://localhost:7001.
-	•	You should see a message in the terminal:
+2.If everything is set up correctly:
+- The server will start at http://localhost:7001.
+- You should see a message in the terminal:
 Server is running at port 7001
 Database connected: <host>, <database-name>
+
+
+
