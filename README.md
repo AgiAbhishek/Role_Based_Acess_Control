@@ -95,6 +95,7 @@ nodejs-rbac-tutorial/
 1. In the root of your src directory, create a .env file.
    
 2. Add the following environment variables to the .env file:
+ ```bash
  PORT=7001
 JWT_SECRET=your_jwt_secret
 CONNECTION_STRING=your_mongodb_connection_string
@@ -104,6 +105,7 @@ CONNECTION_STRING=your_mongodb_connection_string
 - your_mongodb_connection_string: Your MongoDB Atlas connection string.
 
 **Example:**
+```bash
 PORT=7001
 JWT_SECRET=mySuperSecureJWTSecret
 CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
