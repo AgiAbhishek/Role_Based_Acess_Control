@@ -69,6 +69,8 @@ nodejs-rbac-tutorial/
 ├── package.json
 └── README.md
 
+---
+
 ## Installation
 
 ### Step 1: Clone the Repository
@@ -93,6 +95,8 @@ nodejs-rbac-tutorial/
 	•	jsonwebtoken (JWT): A library for securely transmitting information between parties.
 	•	dotenv: A module to load environment variables from a .env file into process.env.
 
+--- 
+
 Step 3: Set Up Environment Variables
 
 	1.	In the root of your src directory, create a .env file.
@@ -110,6 +114,8 @@ PORT=7001
 JWT_SECRET=mySuperSecureJWTSecret
 CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabase?retryWrites=true&w=majority
 
+---
+
 Step 4: Connect to MongoDB Atlas
 
 	1.	Visit MongoDB Atlas and log in.
@@ -121,6 +127,8 @@ Step 4: Connect to MongoDB Atlas
 	•	Allow access from your IP address or from all IPs (for development).
 	5.	Go to the Clusters page and click Connect > Connect Your Application.
 	6.	Copy the connection string and update your .env file as shown in Step 3.
+
+---
 
 
 Step 5: Start the Application
