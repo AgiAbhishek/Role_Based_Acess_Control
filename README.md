@@ -114,27 +114,28 @@ CONNECTION_STRING=mongodb+srv://username:password@cluster0.mongodb.net/myDatabas
 
 ### Step 4: Connect to MongoDB Atlas
 
-1.Visit MongoDB Atlas and log in.
-2.Create a new cluster (the free tier is sufficient for this project).
-3.Under the Database Access section:
+1. Visit MongoDB Atlas and log in.
+2. Create a new cluster (the free tier is sufficient for this project).
+3. Under the Database Access section:
 - Add a new database user with a username and password.
 - Ensure the user has proper read and write access.
-4.Under the Network Access section:
+4. Under the Network Access section:
 - Allow access from your IP address or from all IPs (for development).
-5.Go to the Clusters page and click Connect > Connect Your Application.
-6.Copy the connection string and update your .env file as shown in Step 3.
+5. Go to the Clusters page and click Connect > Connect Your Application.
+6. Copy the connection string and update your .env file as shown in Step 3.
 
 ### Step 5: Start the Application
-1.Run the application locally using:
+1. Run the application locally using:
 - npm run dev
-2.If everything is set up correctly:
+  
+2. If everything is set up correctly:
   
 - The server will start at http://localhost:7001.
 - You should see a message in the terminal:
  **Server is running at port 7001**  
  **Database connected: `<host>`, `<database-name>`**
   
-3.Open your browser and visit:
+3. Open your browser and visit:
 - http://localhost:7001/login.html to log in.
 - http://localhost:7001/register.html to register.
 
